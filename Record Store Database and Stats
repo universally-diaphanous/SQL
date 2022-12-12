@@ -1,0 +1,19 @@
+CREATE TABLE bts_albums (id INTEGER PRIMARY KEY, album TEXT, title_track TEXT, track_length INTEGER,  release_year INTEGER, price TEXT);
+
+INSERT INTO BTS_albums VALUES (1, "Dark And Wild", "Danger", 14, 2014, 15);
+INSERT INTO BTS_albums VALUES (2, "Wake Up", "No More Dream", 13, 2014, 14);
+INSERT INTO BTS_albums VALUES (3, "Youth", "For You", 13, 2016, 20);
+INSERT INTO BTS_albums VALUES (4, "Wings", "Blood Sweat and Tears", 15, 2016, 25);
+INSERT INTO BTS_albums VALUES (5, "Face Yourself", "Dont Leave Me", 12, 2018, 25);
+INSERT INTO BTS_albums VALUES (6, "Love Yourself: Tear", "Fake Love", 11, 2018, 26);
+INSERT INTO BTS_albums VALUES (7, "Map Of the Soul: 7", "Black Swan", 20, 2020, 30);
+INSERT INTO BTS_albums VALUES (8, "Map Of The Soul: 7 - The Journey", "Stay Gold", 13, 2020, 22);
+INSERT INTO BTS_albums VALUES (9, "BE", "Life Goes On", 8, 2020, 50);
+INSERT INTO BTS_albums VALUES (10, "Love Yourself: Her", "DNA", 11, 2017, 24);
+INSERT INTO BTS_albums VALUES (11, "Love Yourself: Answer", "IDOL", 26, 2018, 28);
+INSERT INTO BTS_albums VALUES (12, "O!RUL8,2?", "N.O", 10, 2013, 12);
+INSERT INTO BTS_albums VALUES (13, "Skool Luv Affair", "Boy in Luv", 12, 2014, 12);
+INSERT INTO BTS_albums VALUES (14, "The Most Beautiful Moment In Life, Pt 1", "I Need U", 9, 2015, 22);
+INSERT INTO BTS_albums VALUES (15, "The Most Beautiful Moment In Life, Pt. 2", "Run", 9, 2015, 22);
+
+select release_year, AVG(price) from bts_albums GROUP BY release_year;
